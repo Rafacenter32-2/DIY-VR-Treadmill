@@ -2,6 +2,8 @@
 script that converts mouse movement into joystick movement for a VR treadmill.
 (requires Python3)
 
+to bind the virtual gamepad using steam input, open the script in a text editor and comment out the indicated line. when the bind is set up, uncomment the line and restart the script.
+
 REQUIRED:
 pynput
 vgamepad
