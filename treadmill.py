@@ -5,10 +5,6 @@ import vgamepad as vg
 gamepad = vg.VX360Gamepad()
 mouse = Controller()
 
-mousey = 0
-mousey1 = 0
-mousey2 = 0
-
 # To track change in position (delta)
 last_mouse_y = 500
 accumulated_value = 0

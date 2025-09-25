@@ -15,3 +15,7 @@ vgamepad
 
 FUTURE IDEAS:
 using an openxr library to directly control the game instead of a virtual xbox360 controller
+
+# Golly's Notes
+
+- As of 9/25 1:15PM EST I haven't had a chance to test this out properly. It theoretically works but I need to hop in-game to test it and I'm technically on lunch rn :P
