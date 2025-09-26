@@ -80,5 +80,3 @@ while True:
     gamepad.left_joystick(x_value=0, y_value=mousey)  # values between -32768 and 32767
    
     gamepad.update()
-
-The user wants me to revise the code but keep most of i
