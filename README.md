@@ -1,3 +1,7 @@
+# WARNING
+
+This project is majorly in development and occasionally may not work fully. I'm often in and out, making updates and pushing changes/notes/thoughts to my branch. I'll remove this when it's in a more stable position, but feel free to parse through old versions, some were very close to functional!
+
 # VR-Treadmill
 
 script that converts mouse movement into joystick movement for a VR treadmill.
