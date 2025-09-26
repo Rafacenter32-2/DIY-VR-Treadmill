@@ -18,9 +18,15 @@ Instead of doing a hard reset, there's now more of a decay so there's not so muc
 
 ## Golly's Plan
 
+### Realistic Plans
+
 - **Speed**: Get the speed tracker to roughly calculate a general speed for walking vs jogging vs sprinting. It may not need to differentiate between these three, but I want it to be able to increment rather than going full force for 2 miles an hour.
 - **Joystick Movement**: The joystick needs to push a little bit for walking, a little more for jogging, and even more for sprinting. Need to sort this out and smooth out this movement
 - **Display**: I realized that I'm testing the treadmill across the room so having a bar that visibly changes is much better for testing (that way I don't have to open up steam and squint at the left joystick to see what it's doing). May want to build on this a little bit to make it nicer
+
+### Optimistic Plans
+
+- **Controller Mocking**: As fer sler mentioned, using an openxr library to control the game may be better, or mocking more of the controller. Depending on the bindings needed, one could, theoretically, make it so sprinting actually triggers the sprint action of the game you're playing once you get to a certain speed. The current problem, though, is the jankiness of the setup. We're losing track of how fast the user is going after a certain speed, so we may have to settle for a "oh I've lost track of how fast you're going, I guess you're sprinting now" mode. Still in the process of fine tuning things.
 
 ## Golly's Notes
 
