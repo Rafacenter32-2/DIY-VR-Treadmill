@@ -30,6 +30,21 @@ Instead of doing a hard reset, there's now more of a decay so there's not so muc
 
 ## Golly's Notes
 
+- 7:10PM Pack it in, boys, I'm restarting from fer sler's solution. The data I have is as follows:
+
+  - Fer Sler got half life 2 to work (I don't have this game except for friend share and I can't get the vr with friend share, sadly) which is a flatscreen to VR game.
+  - Portal 2 "works" with Fer Sler's original code, but goes backwards for some reason???
+  - Decay is promising, but needs to be stripped away so I can handle more raw input for this thing. Any smoothing and editing is removed in favor of the raw input data so I can get a better grasp. Once again, I have overcomplicated something and made it a mess. I will, however, save the code so I can pull in elements once the base input is ready.
+  - Skyrim VR is not a good test game because of long load times and bad character movement overall. Portal 2 is very promising
+  - Valheim also, sadly, doesn't recognize the Maratron for me. At least not without reWASD.
+  - speed = distance / time (thanks grade school)
+  - general things for consideration:
+    - when the mouse hits the edge of the screen before resetting, it stops registering the speed
+      - this could, theoretically, also be used to my advantage? If we're hitting the bounds of the screen, we are going "max speed". I don't necessarily want to rely on this, however, as I tried an iteration with, like, "zones" where it'd do a hardcoded 25% for walking, 75% for jogging, 100% for sprinting, but it feels weird like this
+    - Some games may have an issue with registering both an xbox 360 controller AND an oculus controller at the same time. So far, Portal 2 is not one of those games
+
+- 6:12PM Inexplicably, with fer sler's code in Portal 2 my character moves backwards EXCEPT for when I am walking on the treadmill (in which case I move forward). Going to work on the code some more...
+- 9/26 6:10PM Nope I did the test and it works fine. It's JUST this program that won't be recognized. I'm going to try reverting back to fer sler's version to see if it's my own code that's the issue.
 - On 9/26 at around 6:00PM Still bugged about what I realized earlier: I'm going to try a few experiments to see if my hunch is right about the double controller situation. Gonna plug in a 360 controller I have and see if I can use that and my Oculus at the same time. If I can, then there's something odd going on with the script. If I can't, then the issue is that these VR games (at least the modded VR games thus far, Valheim and Portal 2 so far) don't allow for multiple controller inputs at the same time.
 - On 9/26 at around 2:50PM (during another lunch :P): Realized a major flaw during lunch when trying to play Valheim. We're mocking two controllers into one, and I don't think this works on all games. There are a few possibilities on how to work this, but none of them are very ideal. Here's what I'm thinking:
   - Get HIDHide and hide the controller inputs from all games, then have this program create a virtual oculus controller set and map through all the controller input that it sees from the real oculus controllers, EXCEPT the left analog stick, which it will use some algorithm to read the mouse movements for (still a work in progress). Would need to be configured for any other controllers, and is going to be obnoxious to sort through.
