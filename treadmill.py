@@ -103,7 +103,7 @@ while True:
 
     joystick_bar = create_bar(abs(mousey), max_speed, bar_width)
 
-    print(f"JOY: [{joystick_bar}]")
+    print(f"\rJOY: [{joystick_bar}]", end='', flush=True)
     
     gamepad.left_joystick(x_value=0, y_value=mousey)  # values between -32768 and 32767
     
