@@ -1,6 +1,7 @@
 import time
 from pynput.mouse import Button, Controller
 import vgamepad as vg
+from collections import deque
 
 gamepad = vg.VX360Gamepad()
 mouse = Controller()
