@@ -34,6 +34,10 @@ Instead of doing a hard reset, there's now more of a decay so there's not so muc
 
 ## Golly's Notes
 
+- 7:53AM I continue to struggle with Portal 2. I'm thinking of getting Half Life 2 for myself that way I can play it on vr and compare my experience with fer sler and bheeks. Portal 2 consistently moves backwards slowly when at rest and I have no clue if that's a bug with Portal 2, or with my setup. I'm thinking that going with Half Life 2 I can watch both the other videos and see how their programs function.
+
+##### 9/27
+
 - 7:10PM Pack it in, boys, I'm restarting from fer sler's solution. The data I have is as follows:
 
   - Fer Sler got half life 2 to work (I don't have this game except for friend share and I can't get the vr with friend share, sadly) which is a flatscreen to VR game.
