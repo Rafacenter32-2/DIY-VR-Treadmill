@@ -32,8 +32,11 @@ Instead of doing a hard reset, there's now more of a decay so there's not so muc
 
 - **Controller Mocking**: As fer sler mentioned, using an openxr library to control the game may be better, or mocking more of the controller. Depending on the bindings needed, one could, theoretically, make it so sprinting actually triggers the sprint action of the game you're playing once you get to a certain speed. The current problem, though, is the jankiness of the setup. We're losing track of how fast the user is going after a certain speed, so we may have to settle for a "oh I've lost track of how fast you're going, I guess you're sprinting now" mode. Still in the process of fine tuning things
 
-## Golly's Notes
+## Golly's Notes (if you try to read them, they are in reverse order, most recent at the top)
 
+- 9:55AM After experimenting with my own xbox 360 controller, I can confirm: it doesn't work. In order to get half life 2 to work (and probably many other games) I will need to use openxr to make a virtual vr controller, pass through the inputs from the actual vr controllers, and pass through the mouse input. This changes... a lot of things. Because of this, I'm going to rework this project a bit to explain.
+- 9:23AM I tried half life 2 but there's a major problem: the menu uses the mouse itself to navigate, which is being repeatedly reset, making navigation very difficult. Also, the solution doesn't seem to work right now, at least with my through-setup for fer sler's code. I'm going to try resetting to the original fer sler solution, and see if half life 2 works then
+- 8:11AM Ope fer sler didn't play half life 2, he played Alyx, a much more expensive game :( so I'm going to have to rely on comparing this program that I've modified from one other person who made it in around 45 minutes, with the no-doubt massively maintained and team-constructed product which has been developed over years that is reWASD. So I'm sure there will be differences
 - 7:53AM I continue to struggle with Portal 2. I'm thinking of getting Half Life 2 for myself that way I can play it on vr and compare my experience with fer sler and bheeks. Portal 2 consistently moves backwards slowly when at rest and I have no clue if that's a bug with Portal 2, or with my setup. I'm thinking that going with Half Life 2 I can watch both the other videos and see how their programs function.
 
 ##### 9/27
