@@ -18,7 +18,7 @@ using an openxr library to directly control the game instead of a virtual xbox36
 
 # Golly's Version
 
-Instead of doing a hard reset, there's now more of a decay so there's not so much jitter. Also reworked some things. Hope this helps! :D
+treadmill.py is a working smoothed version of fer sler's original code. It works in some games, but not all games as there is some difficulty with steam's registering a secondary controller. I'm in the process of determining how to fix this. I think the openxr library will have to be the solution for cases where a second controller isn't allowed.
 
 ## Golly's Plan
 
