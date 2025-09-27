@@ -34,6 +34,11 @@ treadmill.py is a working smoothed version of fer sler's original code. It works
 
 ## Golly's Notes (if you try to read them, they are in reverse order, most recent at the top)
 
+- 3:46PM Putting this aside for the moment. After speaking to some people on the openxr discord, this will be very difficult to emulate fully for games that don't accept multiple controller inputs without reWASD. We'd need to do one of the following:
+  1. writing a SteamVR driver, and with some trickery using it to shim the real controller with a virtual controller
+  2. writing an OpenXR API layer, and alter specific action API for the corresponding action paths
+  3. modifying an open source runtime, such as Monado or VDXR, and implement your own type of controller in it
+- Sadly, all of these will require C or C++ knowledge that I don't have right now and don't currently have the time to learn more of.
 - 11:45AM Spent a while reading through documentation on openxr and hunting through projects. I cannot find a single tool that ISN'T reWASD which creates a virtual VR Controller. I can also see why: it's a complex process to mock a controller. Without a tool that can emulate a VR Controller, I'm a bit stuck. I don't know controllers very well but I know there are a LOT of different ones, so even if I can mock my exact oculus 3 controllers, it won't work for someone with another VR controller.
 - 9:55AM After experimenting with my own xbox 360 controller, I can confirm: it doesn't work. In order to get half life 2 to work (and probably many other games) I will need to use openxr to make a virtual vr controller, pass through the inputs from the actual vr controllers, and pass through the mouse input. This changes... a lot of things. Because of this, I'm going to rework this project a bit to explain.
 - 9:23AM I tried half life 2 but there's a major problem: the menu uses the mouse itself to navigate, which is being repeatedly reset, making navigation very difficult. Also, the solution doesn't seem to work right now, at least with my through-setup for fer sler's code. I'm going to try resetting to the original fer sler solution, and see if half life 2 works then
